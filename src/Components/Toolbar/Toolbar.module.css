@@ -1,0 +1,37 @@
+.Toolbar{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+    color: #fff;
+    border-bottom: 1px solid rgb(45,45,45);
+}
+
+.Toolbar nav{
+    width: 15%;
+    height: 100%;
+}
+
+.Toolbar nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+}
+.Toolbar :not(.active){
+    color: #ccc;
+}
+
+.Toolbar a{
+    font-size: 1.1em;
+}
+
+
+.active{
+    opacity: 1;
+    color: #0f52ba;
+    transition: all 02s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Toolbar from './Components/Toolbar/Toolbar';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import GamesGrid from './Components/GamesGrid/GamesGrid';
+import Form from './Components/Form/Form';
+import GameInfo from './Components/GameInfo/GameInfo';
+import Edit from './Components/Edit/Edit';
+
+//Switch only allows one Route component to render
+//Route is used to specify which path(url) should access which component
+//exact, a property of Route component, when true The route will only access that path and not its successors
+//e.g /games route will rendere its component even when path is /games/:something when exact is false
+//Redirect component redirects unwanted paths to a desired path '/' will redirect all paths(exact is false)
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toolbar />
+      <Switch>
+
+        <Redirect from='/' to='/games' />
+      </Switch>
     </div>
   );
 }
