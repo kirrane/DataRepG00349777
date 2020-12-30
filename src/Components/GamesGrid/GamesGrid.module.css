@@ -1,0 +1,8 @@
+.GamesGrid{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    padding-bottom: 3vh;
+}

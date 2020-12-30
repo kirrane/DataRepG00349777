@@ -1,0 +1,27 @@
+.Game{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.Game img{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+}
+
+.Game p{
+    color: #ffffff;
+    font-size: 1.1em;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.Game p:hover{
+    opacity: 1;
+}

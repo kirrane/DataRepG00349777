@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Toolbar />
       <Switch>
-
+        <Route path='/games' component={GamesGrid} />
         <Redirect from='/' to='/games' />
       </Switch>
     </div>
