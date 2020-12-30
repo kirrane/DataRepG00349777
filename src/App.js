@@ -20,7 +20,7 @@ function App() {
 
         <Route path='/games' component={GamesGrid} />
         <Route path='/game/:id' exact component={GameInfo} />
-
+        <Route path='/create' exact component={Form} />
         <Redirect from='/' to='/games' />
       </Switch>
     </div>
