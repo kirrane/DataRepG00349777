@@ -17,7 +17,10 @@ function App() {
     <div className="App">
       <Toolbar />
       <Switch>
+
         <Route path='/games' component={GamesGrid} />
+        <Route path='/game/:id' exact component={GameInfo} />
+
         <Redirect from='/' to='/games' />
       </Switch>
     </div>

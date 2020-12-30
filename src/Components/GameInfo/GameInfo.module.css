@@ -1,1 +1,51 @@
 
+.Info{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.GameInfo{
+    display: flex;
+
+}
+.GameInfo img{
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 300px;
+    margin-left: 10px;
+}
+.GameInfo table{
+    width: 40vw;
+    max-height: 50vh;
+}
+
+.GameInfo th,td{
+    height: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px 1px #0f52ba;
+    font-weight: 400;
+    font-size: 1em;
+}
+.Button{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 100px;
+    background-color:  #115cd2;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: rgb(235, 218, 212);
+    border-radius: 10px;
+}
+.Button:hover{
+    background-color: #0fa8ba;
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    margin: 20px;
+}
+
