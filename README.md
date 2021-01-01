@@ -1,3 +1,20 @@
+Instructions:
+
+
+client:
+1) open the folder,
+2) run npm install to install dependencies
+3) run npm start to run the code.
+
+backend:
+1) make sure you have mongodb install and running in your local machine
+2) run npm install to install dependencies
+3) run node server.js to run the code
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
