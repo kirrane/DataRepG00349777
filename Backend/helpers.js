@@ -22,11 +22,11 @@ exports.createGame = (req, res) => {
 }
 
 exports.getGame = (req, res) => db.Game.findById(req.params.gameId)
-    .then((game) => { console.log(req.params); res.json(game) })
+    .then((game) =>{console.log(req.params); res.json(game)})
     .catch((error) => res.send(error));
 
-exports.updateGame = (req, res) => db.Game.findOneAndUpdate({ _id: req.params.gameId }, req.body, { new: true })
-    .then((Game) => { console.log(req.body); res.json(Game) })
+exports.updateGame = (req, res) => db.Game.findOneAndUpdate({ _id: req.params.gameId },req.body, { new: true })
+    .then((Game) =>{console.log(req.body); res.json(Game)})
     .catch((error) => res.send(error));
 
 exports.removeGame = (req, res) => db.Game.deleteOne({ _id: req.params.gameId })
