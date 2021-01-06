@@ -1,4 +1,4 @@
-Instructions:
+Instructions: To Run application
 
 
 client:
@@ -12,7 +12,12 @@ backend:
 3) run node server.js to run the code
 
 
+Instructions on using application:
 
+Homepage will greet you with list of games to get more information on these game you simply click on the title
+Once you have clicked onto the title you will be able to edit, delete the chosen game
+To create your own game click on the create tab in the navabar you will be able to type in title of the game and requirements and information, you will also be able to upload a cover photo for the game 
+from your desktop.
 
 
 # Getting Started with Create React App
